@@ -14,6 +14,15 @@ body {
     margin: 20px;
 }
 
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    margin-top: 20px;
+}
+
 .board {
     width: 500px;
     height: 500px;
