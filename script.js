@@ -1,6 +1,20 @@
 document.addEventListener('DOMContentLoaded', function () {
     createBoard(16);
-})
+});
+let sizeSelector = document.getElementById('popup')
+sizeSelector.addEventListener('click', function () {
+    let newSize = parseInt(prompt("Please enter a number from 1 to 100"))
+    while (!newSize) {
+        newSize = parseInt(prompt('Please enter valid number!'));
+    }
+    if (newSize > 100) {
+        newSize = parseInt(prompt("Enter number below 100"));
+    }
+    else {
+        createBoard(newSize);
+    }
+
+});
 
 function createBoard(size) {
     let board = document.querySelector('.board');
