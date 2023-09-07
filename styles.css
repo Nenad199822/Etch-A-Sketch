@@ -13,3 +13,10 @@ body {
     justify-content: space-evenly;
     margin: 20px;
 }
+
+.board {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    border: 2px solid blue;
+}
