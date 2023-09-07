@@ -4,3 +4,12 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+}
