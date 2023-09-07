@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     createBoard(16);
+    clearBoard();
 });
 let sizeSelector = document.getElementById('popup')
 sizeSelector.addEventListener('click', function () {
@@ -15,6 +16,12 @@ sizeSelector.addEventListener('click', function () {
     }
 
 });
+function clearBoard() {
+    let divs = document.getElementsByClassName('active')
+    for (i = 0; i < divs.length; i++) {
+        divs[i].style.backgroundColor = 'white'
+    }
+}
 
 function createBoard(size) {
     let board = document.querySelector('.board');
@@ -26,6 +33,7 @@ function createBoard(size) {
         let div = document.createElement('div');
         board.appendChild(div)
         div.addEventListener('mouseover', function () {
+            div.classList.add('active');
             div.style.backgroundColor = "black";
         })
     }
