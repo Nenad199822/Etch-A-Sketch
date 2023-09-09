@@ -12,7 +12,7 @@ sizeSelector.addEventListener('click', function () {
     }
     else {
         createBoard(newSize);
-        currentColor = 'red';
+        currentColor = 'gray';
     }
 });
 function clearBoard() {
@@ -21,7 +21,7 @@ function clearBoard() {
         divs[i].style.backgroundColor = 'white'
     }
 }
-let currentColor = 'blue'
+let currentColor = 'gray'
 
 function createBoard(size) {
     let board = document.querySelector('.board');
@@ -40,7 +40,7 @@ function createBoard(size) {
             } else if (currentColor === 'black') {
                 div.style.backgroundColor = 'black'
             } else {
-                div.style.backgroundColor = 'red'
+                div.style.backgroundColor = 'gray'
             }
         })
 
