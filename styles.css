@@ -5,13 +5,17 @@ body {
     justify-content: center;
 }
 
+#head {
+    margin-top: 30px;
+}
+
 .header {
     display: flex;
     flex-direction: row;
     width: 400px;
     align-items: center;
     justify-content: space-evenly;
-    margin: 20px;
+    margin: 30px;
 }
 
 .footer {
