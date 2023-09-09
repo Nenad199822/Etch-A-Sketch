@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
     createBoard(16);
-    clearBoard();
 });
 let sizeSelector = document.getElementById('popup')
 sizeSelector.addEventListener('click', function () {
@@ -31,6 +30,7 @@ function createBoard(size) {
     let numDivs = size * size;
     for (let i = 0; i < numDivs; i++) {
         let div = document.createElement('div');
+        clearBoard();
         board.appendChild(div)
         div.addEventListener('mouseover', function () {
             div.classList.add('active');
@@ -38,3 +38,8 @@ function createBoard(size) {
         })
     }
 }
+let reset = document.getElementById('reset');
+reset.addEventListener('click', function () {
+    clearBoard();
+
+})
