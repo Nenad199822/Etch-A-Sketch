@@ -27,7 +27,8 @@ body {
     width: 500px;
     height: 500px;
     display: grid;
-    border: 2px solid blue;
+    border: 2px solid black;
+    box-shadow: 10px 10px 5px lightblue;
 }
 
 #random {
